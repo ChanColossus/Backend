@@ -12,7 +12,7 @@ const cors = require('cors')
  const watercycle = require("./routes/watercycle");
  const hydroponics = require("./routes/hydroponics");
 
-const sensor = require('./models/sensor');
+const sensor = require('./routes/sensor');
 
  app.use(cors({
     origin: 'http://localhost:3000', // Frontend URL
