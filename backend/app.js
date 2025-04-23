@@ -12,6 +12,7 @@ const cors = require('cors')
  const watercycle = require("./routes/watercycle");
  const hydroponics = require("./routes/hydroponics");
 
+const sensor = require('./models/sensor');
 
  app.use(cors({
     origin: 'http://localhost:3000', // Frontend URL
@@ -30,7 +31,7 @@ app.use('/api/v1', waterdrain);
 app.use('/api/v1', environment);
 app.use('/api/v1', watercycle);
 app.use('/api/v1', hydroponics);
-
+app.use('/api/v1', sensor);
 
 //this is a test if git is working -junio
 
